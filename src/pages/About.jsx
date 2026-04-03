@@ -16,7 +16,7 @@ export default function About() {
             <span className="text-blue-300/50 font-mono text-sm tracking-widest absolute top-4 left-4 z-10">AP VIEW</span>
             <img 
               src={alexisPortrait} 
-              alt="Marie Alexis S. Uy Portrait" 
+              alt="Marie Alexis Uy Portrait" 
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
@@ -28,14 +28,14 @@ export default function About() {
               <div className="bg-blue-50 p-3 rounded-lg text-blue-600"><User /></div>
               <div>
                 <p className="text-xs font-bold text-blue-400 uppercase tracking-wider">Full Name</p>
-                <p className="font-semibold text-blue-950">Marie Alexis S. Uy</p>
+                <p className="font-semibold text-blue-950">Marie Alexis Uy</p>
               </div>
             </div>
             <div className="bg-white p-4 rounded-xl border border-blue-100 flex items-center gap-4 shadow-sm">
               <div className="bg-blue-50 p-3 rounded-lg text-blue-600"><Calendar /></div>
               <div>
                 <p className="text-xs font-bold text-blue-400 uppercase tracking-wider">Birth Date & Age</p>
-                <p className="font-semibold text-blue-950">March 3, 2005 (21 Yrs)</p>
+                <p className="font-semibold text-blue-950">March 31, 2005 (21 Yrs)</p>
               </div>
             </div>
             <div className="bg-white p-4 rounded-xl border border-blue-100 flex items-center gap-4 shadow-sm">

@@ -20,7 +20,7 @@ export default function Home() {
           </h1>
           
           <p className="text-lg md:text-xl text-blue-200 font-light max-w-xl leading-relaxed">
-            I am <strong className="font-semibold text-white">Marie Alexis S. Uy</strong>, a dedicated Radiologic Technology student combining deep anatomical knowledge with advanced imaging science to deliver exceptional patient care.
+            I am <strong className="font-semibold text-white">Marie Alexis Uy</strong>, a dedicated Radiologic Technology student combining deep anatomical knowledge with advanced imaging science to deliver exceptional patient care.
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4">
@@ -37,7 +37,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-blue-950 via-transparent to-transparent z-10"></div>
           <img 
             src={alexisPortrait} 
-            alt="Marie Alexis S. Uy" 
+            alt="Marie Alexis Uy" 
             className="w-full h-full object-cover object-top opacity-90"
           />
         </div>
