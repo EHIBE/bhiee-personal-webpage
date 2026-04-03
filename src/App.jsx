@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Home from './pages/Home'
@@ -10,6 +11,7 @@ import Coursework from './pages/Coursework'
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col selection:bg-blue-200">
+      <ScrollToTop />
       <Header />
       <main className="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <Routes>

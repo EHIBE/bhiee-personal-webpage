@@ -8,7 +8,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-blue-950 text-white rounded-[2.5rem] shadow-2xl border border-blue-900 flex flex-col-reverse md:flex-row items-center">
         <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-400 via-blue-950 to-blue-950"></div>
         
-        <div className="relative z-10 w-full md:w-3/5 p-10 md:p-16 space-y-8">
+        <div className="relative z-10 w-full md:w-3/5 p-8 md:p-16 space-y-8">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-900/80 border border-blue-700 backdrop-blur-md shadow-sm">
             <Activity className="h-4 w-4 text-amber-400" />
             <span className="text-xs font-bold text-blue-50 tracking-widest uppercase">BSRT Candidate • Class of 2028</span>
@@ -23,17 +23,17 @@ export default function Home() {
             I am <strong className="font-semibold text-white">Marie Alexis Uy</strong>, a dedicated Radiologic Technology student combining deep anatomical knowledge with advanced imaging science to deliver exceptional patient care.
           </p>
           
-          <div className="flex flex-wrap gap-4 pt-4">
-            <Link to="/about" className="bg-amber-100 hover:bg-amber-200 text-amber-950 px-8 py-4 rounded-xl font-bold transition-transform hover:-translate-y-1 flex items-center gap-2 shadow-lg shadow-amber-900/20">
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <Link to="/about" className="bg-amber-100 hover:bg-amber-200 text-amber-950 px-8 py-4 rounded-xl font-bold transition-transform hover:-translate-y-1 flex items-center justify-center gap-2 shadow-lg shadow-amber-900/20">
               View Full Profile <ArrowRight className="h-5 w-5" />
             </Link>
-            <Link to="/experience" className="bg-blue-900/50 hover:bg-blue-800 border border-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-colors flex items-center gap-2">
+            <Link to="/experience" className="bg-blue-900/50 hover:bg-blue-800 border border-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-colors flex items-center justify-center gap-2">
               <Award className="h-5 w-5 text-blue-300" /> Professional Experience
             </Link>
           </div>
         </div>
 
-        <div className="relative w-full md:w-2/5 h-64 md:h-auto md:absolute md:right-0 md:top-0 md:bottom-0 overflow-hidden">
+        <div className="relative w-full md:w-2/5 h-80 md:h-auto md:absolute md:right-0 md:top-0 md:bottom-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-l from-blue-950 via-transparent to-transparent z-10"></div>
           <img 
             src={alexisPortrait} 
@@ -43,9 +43,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-3 gap-4 px-2">
+      <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         <div className="bg-white rounded-2xl p-6 border border-blue-100 shadow-sm flex items-center gap-4">
-          <div className="p-3 bg-blue-50 rounded-xl text-blue-600">
+          <div className="p-3 bg-blue-50 rounded-xl text-blue-600 shrink-0">
             <Stethoscope className="h-6 w-6" />
           </div>
           <div>
@@ -54,7 +54,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-white rounded-2xl p-6 border border-blue-100 shadow-sm flex items-center gap-4">
-          <div className="p-3 bg-amber-50 rounded-xl text-amber-600">
+          <div className="p-3 bg-amber-50 rounded-xl text-amber-600 shrink-0">
             <Award className="h-6 w-6" />
           </div>
           <div>
@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-white rounded-2xl p-6 border border-blue-100 shadow-sm flex items-center gap-4">
-          <div className="p-3 bg-emerald-50 rounded-xl text-emerald-600">
+          <div className="p-3 bg-emerald-50 rounded-xl text-emerald-600 shrink-0">
             <ShieldCheck className="h-6 w-6" />
           </div>
           <div>
@@ -75,7 +75,7 @@ export default function Home() {
 
       <section className="grid md:grid-cols-3 gap-6">
         <div className="xray-box p-8 rounded-3xl flex flex-col gap-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
-          <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+          <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
             <Bone className="h-8 w-8 text-blue-700 group-hover:text-white" />
           </div>
           <div>
@@ -87,7 +87,7 @@ export default function Home() {
         </div>
 
         <div className="xray-box p-8 rounded-3xl flex flex-col gap-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group">
-          <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
+          <div className="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
             <Scan className="h-8 w-8 text-blue-700 group-hover:text-white" />
           </div>
           <div>
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
 
         <div className="xray-box p-8 rounded-3xl flex flex-col gap-5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group bg-[#f4ebd0] border-[#e6d5a7]">
-          <div className="bg-amber-200 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-amber-600 transition-colors">
+          <div className="bg-amber-200 w-16 h-16 rounded-2xl flex items-center justify-center group-hover:bg-amber-600 transition-colors shrink-0">
             <Activity className="h-8 w-8 text-amber-800 group-hover:text-white" />
           </div>
           <div>

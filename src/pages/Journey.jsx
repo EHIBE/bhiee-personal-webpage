@@ -51,7 +51,7 @@ export default function Journey() {
           <div className="ml-16 md:ml-0 md:w-1/2 md:pr-12">
             <div className="bg-[#f4ebd0] border border-[#e6d5a7] shadow-sm p-6 rounded-2xl">
               <div className="flex items-center gap-3 mb-4 md:hidden">
-                <HeartPulse className="text-emerald-600 h-6 w-6" />
+                <HeartPulse className="text-emerald-600 h-6 w-6 shrink-0" />
                 <h4 className="font-bold text-lg text-blue-900">SHS Work Immersion</h4>
               </div>
               <p className="text-blue-900 leading-relaxed">
@@ -90,7 +90,7 @@ export default function Journey() {
           <div className="ml-16 md:ml-0 md:w-1/2 md:pr-12">
             <div className="bg-blue-950 text-white p-6 rounded-2xl shadow-xl">
               <div className="flex items-center gap-3 mb-4">
-                <Radiation className="text-amber-400 h-6 w-6" />
+                <Radiation className="text-amber-400 h-6 w-6 shrink-0" />
                 <h4 className="font-bold text-lg md:hidden">The Pivot</h4>
               </div>
               <p className="text-blue-100 leading-relaxed">
@@ -103,9 +103,9 @@ export default function Journey() {
 
       <div className="pt-12 border-t-2 border-blue-100">
         <h2 className="text-2xl font-black text-blue-950 mb-6 flex items-center gap-2">
-          <Camera className="text-blue-600" /> Clinical Gallery
+          <Camera className="text-blue-600 shrink-0" /> Clinical Gallery
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
           {galleryImages.map((imgSrc, index) => (
             <div key={index} className="aspect-square bg-blue-100 rounded-xl overflow-hidden border-2 border-blue-200 shadow-sm transition-transform hover:scale-[1.02] cursor-pointer">
               <img 
